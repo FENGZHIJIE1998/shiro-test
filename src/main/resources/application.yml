@@ -1,0 +1,29 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /shiro
+
+
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/sbcweb?characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: 123
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    database: mysql
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+
+swagger:
+  enabled: true
+
+
+
+
